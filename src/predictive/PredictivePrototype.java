@@ -17,46 +17,28 @@ public class PredictivePrototype {
             char letter = word.charAt(count);
 
             switch (letter) {
-                case 'a':
-                case 'b':
-                case 'c':
+                case 'a': case 'b': case 'c':
                     buffer.append(2);
                     break;
-                case 'd':
-                case 'e':
-                case 'f':
+                case 'd':case 'e':case 'f':
                     buffer.append(3);
                     break;
-                case 'g':
-                case 'h':
-                case 'i':
+                case 'g':case 'h':case 'i':
                     buffer.append(4);
                     break;
-                case 'j':
-                case 'k':
-                case 'l':
+                case 'j':case 'k':case 'l':
                     buffer.append(5);
                     break;
-                case 'm':
-                case 'n':
-                case 'o':
+                case 'm':case 'n':case 'o':
                     buffer.append(6);
                     break;
-                case 'p':
-                case 'q':
-                case 'r':
-                case 's':
+                case 'p':case 'q':case 'r':case 's':
                     buffer.append(7);
                     break;
-                case 't':
-                case 'u':
-                case 'v':
+                case 't':case 'u':case 'v':
                     buffer.append(8);
                     break;
-                case 'w':
-                case 'x':
-                case 'y':
-                case 'z':
+                case 'w':case 'x':case 'y':case 'z':
                     buffer.append(9);
                     break;
                 default:

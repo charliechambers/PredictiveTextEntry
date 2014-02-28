@@ -1,6 +1,3 @@
-/**
- * Created by Charles Chambers on 27/02/2014.
- */
 package predictive;
 
 import java.io.File;
@@ -12,7 +9,8 @@ public class PredictivePrototype {
     public static String wordToSignature(String word) {
         // Using StringBuffer rather than String is a more efficient solution as it allows a single variable to be appended.
         // This therefore means it performs the concatenations much more effectively.
-        StringBuffer buffer = new StringBuffer();
+        
+    	StringBuffer buffer = new StringBuffer();
         word = word.toLowerCase();
 
         for (int count = 0; count < word.length(); count++) {
@@ -73,8 +71,7 @@ public class PredictivePrototype {
         // Each time a word is being input, the system has to read through the dictionary line by line.
         // This is obviously hugely inefficient, especially using a Scanner to read the data.
         // A better solution would be to initially store the dictionary in a hash set then continuously refer to the set.
-
-
+    	
         Scanner filescan = null;
         try {
             filescan = new Scanner(new File("/Users/charliechambers/Documents/University First Year/Software Workshop/Programming/PredictiveTextEntry/src/predictive/dictionary.txt"));

@@ -1,7 +1,3 @@
-/**
- * Created by Charles Chambers on 27/02/2014.
- */
-
 package test;
 
 import org.testng.annotations.Test;

@@ -16,41 +16,44 @@ public class PredictivePrototype {
         // Converts the word to lower case.
         word = word.toLowerCase();
 
-        // Loops through each letter in the word.
-        for (int count = 0; count < word.length(); count++) {
-            char letter = word.charAt(count);
+        // Creates a hashtable containing the word
+        Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
+        signatures.put('a', 2);
+        signatures.put('b', 2);
+        signatures.put('c', 2);
+        signatures.put('d', 3);
+        signatures.put('e', 3);
+        signatures.put('f', 3);
+        signatures.put('g', 4);
+        signatures.put('h', 4);
+        signatures.put('i', 4);
+        signatures.put('j', 5);
+        signatures.put('k', 5);
+        signatures.put('l', 5);
+        signatures.put('m', 6);
+        signatures.put('n', 6);
+        signatures.put('o', 6);
+        signatures.put('p', 7);
+        signatures.put('q', 7);
+        signatures.put('r', 7);
+        signatures.put('s', 7);
+        signatures.put('t', 8);
+        signatures.put('u', 8);
+        signatures.put('v', 8);
+        signatures.put('w', 9);
+        signatures.put('x', 9);
+        signatures.put('y', 9);
+        signatures.put('z', 9);
 
-            // Compares the char with each case and appends corresponding number to buffer.
-            switch (letter) {
-                case 'a':case 'b':case 'c':
-                    buffer.append(2);
-                    break;
-                case 'd':case 'e':case 'f':
-                    buffer.append(3);
-                    break;
-                case 'g':case 'h':case 'i':
-                    buffer.append(4);
-                    break;
-                case 'j':case 'k':case 'l':
-                    buffer.append(5);
-                    break;
-                case 'm':case 'n':case 'o':
-                    buffer.append(6);
-                    break;
-                case 'p':case 'q':case 'r':case 's':
-                    buffer.append(7);
-                    break;
-                case 't':case 'u':case 'v':
-                    buffer.append(8);
-                    break;
-                case 'w':case 'x':case 'y':case 'z':
-                    buffer.append(9);
-                    break;
-                // If the char is not in the alphabet, simply append a blank space.
-                default:
-                    buffer.append(" ");
-                    break;
-            }
+        // Loops through each letter in the word.
+        for (int i = 0; i < word.length(); i++) {
+            char letter = word.charAt(i);
+
+            // Compares the letter with each case and appends corresponding number to buffer.
+            if (signatures.containsKey(letter))
+                buffer.append(signatures.get(letter));
+            else
+                buffer.append(" ");
         }
         // Return the string version of the buffer.
         return buffer.toString();
@@ -64,12 +67,12 @@ public class PredictivePrototype {
         // Initialises a new Scanner.
         Scanner filescan = null;
 
-        // Tries to scan in the dictionary, else catches the exception.
         try {
-            filescan = new Scanner(new File("/Users/charliechambers/Documents/University First Year/Software Workshop/Programming/PredictiveTextEntry/src/predictive/dictionary.txt"));
+            filescan = new Scanner(new File("/usr/share/dict/words"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
 
         // Creates a new hash set to store the results.
         Set<String> results = new HashSet<String>();

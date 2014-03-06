@@ -49,7 +49,5 @@ public class WordSig implements Comparable<WordSig> {
         }
         return 0;
     }
-
-
 }
 

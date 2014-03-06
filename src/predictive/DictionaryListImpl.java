@@ -30,11 +30,11 @@ public class DictionaryListImpl {
         } catch (Exception e) {
             System.out.println("SHIT!");
         }
+        Collections.sort(arrayWordList);
     }
 
     public static void main(String[] args) {
         DictionaryListImpl test = new DictionaryListImpl();
-        Collections.sort(test.arrayWordList);
         for (WordSig trial : test.arrayWordList) {
             System.out.println(trial.toString());
         }

@@ -10,10 +10,7 @@ public class WordSig implements Comparable<WordSig> {
 
     public WordSig(String word, String signature) {
         this.word = word;
-        if (signature.isEmpty())
-            this.signature = PredictivePrototype.wordToSignature(word);
-        else
-            this.signature = signature;
+        this.signature = signature;
     }
 
     public String getWord() {
@@ -49,7 +46,5 @@ public class WordSig implements Comparable<WordSig> {
         }
         return 0;
     }
-
-
 }
 

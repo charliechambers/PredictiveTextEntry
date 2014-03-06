@@ -13,7 +13,7 @@ public class DictionaryListImpl {
 
     private FileInputStream textFile;
     private BufferedReader readWords;
-    private ArrayList<WordSig> arrayWordList = new ArrayList<WordSig>();
+    private ArrayList<WordSig> dictionary = new ArrayList<WordSig>();
 
 
     public DictionaryListImpl() {
@@ -22,17 +22,17 @@ public class DictionaryListImpl {
             readWords = new BufferedReader(new InputStreamReader(textFile));
             String word = readWords.readLine();
             while (word != null) {
-                arrayWordList.add(new WordSig(word, wordToSignature(word)));
+                dictionary.add(new WordSig(word, wordToSignature(word)));
                 word = readWords.readLine();
             }
             textFile.close();
         } catch (Exception e) {
         }
-        Collections.sort(arrayWordList);
+        Collections.sort(dictionary);
     }
 
-    public ArrayList<WordSig> getArrayWordList() {
-        return arrayWordList;
+    public ArrayList<WordSig> getDictionary() {
+        return dictionary;
     }
 
     public static String wordToSignature(String word) {
@@ -95,7 +95,7 @@ public class DictionaryListImpl {
         Set<String> results = new HashSet<String>();
 
         DictionaryListImpl dictionaryList = new DictionaryListImpl();
-        ArrayList<WordSig> dictionary = dictionaryList.getArrayWordList();
+        ArrayList<WordSig> dictionary = dictionaryList.getDictionary();
 
         int result = Collections.binarySearch(dictionary, new WordSig("", signature));
         results.add(dictionary.get(result).getWord());

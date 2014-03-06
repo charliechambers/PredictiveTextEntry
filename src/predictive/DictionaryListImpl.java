@@ -18,7 +18,6 @@ public class DictionaryListImpl {
 
     static {
         // Creates a hashtable containing the word
-        Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
         signatures.put('a', 2);
         signatures.put('b', 2);
         signatures.put('c', 2);

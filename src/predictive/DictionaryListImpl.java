@@ -17,7 +17,6 @@ public class DictionaryListImpl {
     private ArrayList<WordSig> dictionary = new ArrayList<WordSig>();
 
     static {
-        // Creates a hashtable containing the word
         signatures.put('a', 2);
         signatures.put('b', 2);
         signatures.put('c', 2);

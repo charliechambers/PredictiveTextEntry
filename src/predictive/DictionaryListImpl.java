@@ -50,9 +50,8 @@ public class DictionaryListImpl {
             textFile = new FileInputStream("/usr/share/dict/words");
             readWords = new BufferedReader(new InputStreamReader(textFile));
             String word;
-            while((word = readWords.readLine()) != null) {
+            while ((word = readWords.readLine()) != null) {
                 dictionary.add(new WordSig(word, wordToSignature(word)));
-                word = readWords.readLine();
             }
             textFile.close();
         } catch (Exception e) {
@@ -65,10 +64,7 @@ public class DictionaryListImpl {
         return dictionary;
     }
 
-    public static String wordToSignature(String word) {
-        // Using StringBuffer rather than String is a more efficient solution as it allows a single variable to be appended.
-        // This therefore means it performs the concatenations much more effectively.
-
+    public String wordToSignature(String word) {
         // Creates new string buffer to hold the signature.
         StringBuffer buffer = new StringBuffer();
 

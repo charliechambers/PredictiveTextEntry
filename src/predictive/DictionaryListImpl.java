@@ -11,40 +11,12 @@ import java.util.*;
  */
 public class DictionaryListImpl {
 
+    private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
     private FileInputStream textFile;
     private BufferedReader readWords;
     private ArrayList<WordSig> dictionary = new ArrayList<WordSig>();
 
-
-    public DictionaryListImpl() {
-        try {
-            textFile = new FileInputStream("/usr/share/dict/words");
-            readWords = new BufferedReader(new InputStreamReader(textFile));
-            String word = readWords.readLine();
-            while (word != null) {
-                dictionary.add(new WordSig(word, wordToSignature(word)));
-                word = readWords.readLine();
-            }
-            textFile.close();
-        } catch (Exception e) {
-        }
-        Collections.sort(dictionary);
-    }
-
-    public ArrayList<WordSig> getDictionary() {
-        return dictionary;
-    }
-
-    public static String wordToSignature(String word) {
-        // Using StringBuffer rather than String is a more efficient solution as it allows a single variable to be appended.
-        // This therefore means it performs the concatenations much more effectively.
-
-        // Creates new string buffer to hold the signature.
-        StringBuffer buffer = new StringBuffer();
-
-        // Converts the word to lower case.
-        word = word.toLowerCase();
-
+    static {
         // Creates a hashtable containing the word
         Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
         signatures.put('a', 2);
@@ -73,6 +45,37 @@ public class DictionaryListImpl {
         signatures.put('x', 9);
         signatures.put('y', 9);
         signatures.put('z', 9);
+    }
+
+    public DictionaryListImpl() {
+        try {
+            textFile = new FileInputStream("/usr/share/dict/words");
+            readWords = new BufferedReader(new InputStreamReader(textFile));
+            String word;
+            while((word = readWords.readLine()) != null) {
+                dictionary.add(new WordSig(word, wordToSignature(word)));
+                word = readWords.readLine();
+            }
+            textFile.close();
+        } catch (Exception e) {
+            System.out.println("Dictionary file could not be found");
+        }
+        Collections.sort(dictionary);
+    }
+
+    public ArrayList<WordSig> getDictionary() {
+        return dictionary;
+    }
+
+    public static String wordToSignature(String word) {
+        // Using StringBuffer rather than String is a more efficient solution as it allows a single variable to be appended.
+        // This therefore means it performs the concatenations much more effectively.
+
+        // Creates new string buffer to hold the signature.
+        StringBuffer buffer = new StringBuffer();
+
+        // Converts the word to lower case.
+        word = word.toLowerCase();
 
         // Loops through each letter in the word.
         for (int i = 0; i < word.length(); i++) {
@@ -90,7 +93,6 @@ public class DictionaryListImpl {
 
 
     public static Set<String> signatureToWords(String signature) {
-
         // Creates a new hash set to store the results.
         Set<String> results = new HashSet<String>();
 

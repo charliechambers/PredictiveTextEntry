@@ -8,9 +8,12 @@ public class WordSig implements Comparable<WordSig> {
     private String signature;
     private String word;
 
-    public WordSig(String word) {
+    public WordSig(String word, String signature) {
         this.word = word;
-        this.signature = PredictivePrototype.wordToSignature(word);
+        if (signature.isEmpty())
+            this.signature = PredictivePrototype.wordToSignature(word);
+        else
+            this.signature = signature;
     }
 
     public String getWord() {
@@ -23,7 +26,7 @@ public class WordSig implements Comparable<WordSig> {
 
     @Override
     public String toString() {
-        return "WordSig{" + "word='" + word + '\'' + ", signature='" + signature + '\'' + '}';
+        return "WordSig{" + "word ='" + word + '\'' + ", signature ='" + signature + '\'' + '}';
     }
 
     @Override
@@ -46,5 +49,7 @@ public class WordSig implements Comparable<WordSig> {
         }
         return 0;
     }
+
+
 }
 

@@ -2,7 +2,10 @@ package predictive;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Scanner;
+import java.util.Set;
 
 public class PredictivePrototype {
 
@@ -64,6 +67,9 @@ public class PredictivePrototype {
         // This is obviously hugely inefficient, especially using a Scanner to read the data.
         // A better solution would be to initially store the dictionary in a hash set then continuously refer to the set.
 
+        // Creates a new hash set to store the results.
+        Set<String> results = new HashSet<String>();
+
         // Initialises a new Scanner.
         Scanner filescan = null;
 
@@ -72,10 +78,6 @@ public class PredictivePrototype {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
-        // Creates a new hash set to store the results.
-        Set<String> results = new HashSet<String>();
 
         // While the scanner has an input.
         while (filescan.hasNext()) {
@@ -87,6 +89,7 @@ public class PredictivePrototype {
                 results.add(current);
             }
         }
+
         return results;
     }
 

@@ -9,6 +9,7 @@ import java.util.*;
 /**
  * Created by Charles Chambers on 06/03/2014.
  */
+
 public class DictionaryListImpl {
 
     private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
@@ -16,6 +17,9 @@ public class DictionaryListImpl {
     private BufferedReader readWords;
     private ArrayList<WordSig> dictionary = new ArrayList<WordSig>();
 
+    /**
+     * Hash table for signatures initialised in a static initialiser.
+     */
     static {
         signatures.put('a', 2);
         signatures.put('b', 2);
@@ -45,6 +49,10 @@ public class DictionaryListImpl {
         signatures.put('z', 9);
     }
 
+    /**
+     * Constructor reads words file into an Array List, then is sorted.
+     * If words file cannot be found, exception is caught and error message is output.
+     */
     public DictionaryListImpl() {
         try {
             textFile = new FileInputStream("/usr/share/dict/words");
@@ -60,11 +68,22 @@ public class DictionaryListImpl {
         Collections.sort(dictionary);
     }
 
+    /**
+     * Returns the array list containing the dictionary.
+     *
+     * @return
+     */
     public ArrayList<WordSig> getDictionary() {
         return dictionary;
     }
 
-    public String wordToSignature(String word) {
+    /**
+     * Takes in a word and returns the numerical signature for that word.
+     *
+     * @param word
+     * @return
+     */
+    public static String wordToSignature(String word) {
         // Creates new string buffer to hold the signature.
         StringBuffer buffer = new StringBuffer();
 
@@ -86,6 +105,12 @@ public class DictionaryListImpl {
     }
 
 
+    /**
+     * Takes in a numerical signature and returns all possible words matching the numbers.
+     *
+     * @param signature
+     * @return
+     */
     public static Set<String> signatureToWords(String signature) {
         // Creates a new hash set to store the results.
         Set<String> results = new HashSet<String>();
@@ -94,7 +119,22 @@ public class DictionaryListImpl {
         ArrayList<WordSig> dictionary = dictionaryList.getDictionary();
 
         int result = Collections.binarySearch(dictionary, new WordSig("", signature));
-        results.add(dictionary.get(result).getWord());
+        //results.add(dictionary.get(result).getWord().toLowerCase());
+
+        results.add(dictionary.get(result).getWord().toLowerCase());
+
+        int x = result;
+        int y = result;
+
+        while (dictionary.get(x - 1).getSignature().equals(signature)) {
+            results.add(dictionary.get(x - 1).getWord().toLowerCase());
+            x--;
+        }
+
+        while (dictionary.get(y + 1).getSignature().equals(signature)) {
+            results.add(dictionary.get(y + 1).getWord().toLowerCase());
+            y++;
+        }
 
         return results;
     }

@@ -13,8 +13,6 @@ import java.util.*;
 public class DictionaryListImpl {
 
     private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
-    private FileInputStream textFile;
-    private BufferedReader readWords;
     private ArrayList<WordSig> dictionary = new ArrayList<WordSig>();
 
     /**
@@ -54,6 +52,9 @@ public class DictionaryListImpl {
      * If words file cannot be found, exception is caught and error message is output.
      */
     public DictionaryListImpl() {
+        FileInputStream textFile;
+        BufferedReader readWords;
+
         try {
             textFile = new FileInputStream("/usr/share/dict/words");
             readWords = new BufferedReader(new InputStreamReader(textFile));
@@ -83,7 +84,7 @@ public class DictionaryListImpl {
      * @param word
      * @return
      */
-    public static String wordToSignature(String word) {
+    public String wordToSignature(String word) {
         // Creates new string buffer to hold the signature.
         StringBuffer buffer = new StringBuffer();
 
@@ -111,7 +112,7 @@ public class DictionaryListImpl {
      * @param signature
      * @return
      */
-    public static Set<String> signatureToWords(String signature) {
+    public Set<String> signatureToWords(String signature) {
         // Creates a new hash set to store the results.
         Set<String> results = new HashSet<String>();
 

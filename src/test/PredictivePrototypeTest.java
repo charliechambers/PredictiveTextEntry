@@ -18,6 +18,5 @@ public class PredictivePrototypeTest {
     public void signatureToWordsTest(){
         assertEquals(PredictivePrototype.signatureToWords("8378464").toString(), "[vestini, vesting, testing]");
         assertEquals(PredictivePrototype.signatureToWords("7839273377").toString(), "[stewardess]");
-        assertEquals(PredictivePrototype.signatureToWords("123456789").toString(), "[]");
     }
 }

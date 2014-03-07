@@ -116,9 +116,6 @@ public class DictionaryListImpl {
         // Creates a new hash set to store the results.
         Set<String> results = new HashSet<String>();
 
-        DictionaryListImpl dictionaryList = new DictionaryListImpl();
-        ArrayList<WordSig> dictionary = dictionaryList.getDictionary();
-
         int result = Collections.binarySearch(dictionary, new WordSig("", signature));
         //results.add(dictionary.get(result).getWord().toLowerCase());
 

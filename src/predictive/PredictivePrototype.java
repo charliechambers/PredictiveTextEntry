@@ -9,6 +9,12 @@ import java.util.Set;
 
 public class PredictivePrototype {
 
+    /**
+     * Takes in a word and returns the numerical signature for that word.
+     *
+     * @param word
+     * @return
+     */
     public static String wordToSignature(String word) {
         // Using StringBuffer rather than String is a more efficient solution as it allows a single variable to be appended.
         // This therefore means it performs the concatenations much more effectively.
@@ -62,6 +68,12 @@ public class PredictivePrototype {
         return buffer.toString();
     }
 
+    /**
+     * Takes in a numerical signature and returns all possible words matching the numbers.
+     *
+     * @param signature
+     * @return
+     */
     public static Set<String> signatureToWords(String signature) {
         // Each time a word is being input, the system has to read through the dictionary line by line.
         // This is obviously hugely inefficient, especially using a Scanner to read the data.

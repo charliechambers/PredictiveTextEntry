@@ -54,7 +54,6 @@ public class DictionaryListImpl {
     public DictionaryListImpl() {
         FileInputStream textFile;
         BufferedReader readWords;
-
         try {
             textFile = new FileInputStream("/usr/share/dict/words");
             readWords = new BufferedReader(new InputStreamReader(textFile));
@@ -117,13 +116,13 @@ public class DictionaryListImpl {
         Set<String> results = new HashSet<String>();
 
         int result = Collections.binarySearch(dictionary, new WordSig("", signature));
-        //results.add(dictionary.get(result).getWord().toLowerCase());
 
         results.add(dictionary.get(result).getWord().toLowerCase());
 
         int x = result;
         int y = result;
 
+        // Gets all words above and below the return index that also match signature.
         while (dictionary.get(x - 1).getSignature().equals(signature)) {
             results.add(dictionary.get(x - 1).getWord().toLowerCase());
             x--;

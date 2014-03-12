@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="232a7d8d-69b3-4bae-82bc-1ea195728416" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/predictive/dictionary.txt" afterPath="" />
+    <list default="true" id="232a7d8d-69b3-4bae-82bc-1ea195728416" name="Default" comment="Update&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PredictiveTextEntry.iws" />
@@ -66,54 +65,7 @@
     <favorites_list name="PredictiveTextEntry" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PredictivePrototype.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="36" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="1530">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryListImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="38" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="816">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#403#412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordSig.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/predictive/WordSig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="32" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.4871795" vertical-offset="342" max-vertical-offset="840">
-              <folding>
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sigs2WordsProto.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -127,10 +79,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/predictive/Words2SigsProto.java" />
-        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java" />
+        <option value="$PROJECT_DIR$/src/predictive/WordSig.java" />
+        <option value="$PROJECT_DIR$/src/test/PredictivePrototypeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/DictionaryListImplTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
         <option value="$PROJECT_DIR$/src/predictive/DictionaryListImpl.java" />
-        <option value="$PROJECT_DIR$/src/predictive/WordSig.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java" />
       </list>
     </option>
   </component>
@@ -167,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,7 +181,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,8 +205,190 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
-  <component name="RunManager" selected="Application.DictionaryListImpl">
+  <component name="RunManager" selected="TestNG.DictionaryListImplTest">
+    <configuration default="false" name="PredictivePrototypeTest.wordToSignatureTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PredictivePrototypeTest" />
+      <option name="METHOD_NAME" value="wordToSignatureTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PredictivePrototypeTest.signatureToWordsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PredictivePrototypeTest" />
+      <option name="METHOD_NAME" value="signatureToWordsTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DictionaryListImplTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DictionaryListImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64102" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DictionaryListImplTest.wordToSignatureTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DictionaryListImplTest" />
+      <option name="METHOD_NAME" value="wordToSignatureTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DictionaryListImplTest.signatureToWordsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DictionaryListImplTest" />
+      <option name="METHOD_NAME" value="signatureToWordsTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -514,10 +652,24 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.DictionaryListImpl" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.Test" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.wordToSignatureTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
     </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.wordToSignatureTest" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -539,6 +691,7 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -556,7 +709,11 @@
       <workItem from="1393790208679" duration="249000" />
       <workItem from="1393796478800" duration="738000" />
       <workItem from="1393882988717" duration="224000" />
-      <workItem from="1394130362408" duration="7771000" />
+      <workItem from="1394130362408" duration="14829000" />
+      <workItem from="1394152381720" duration="2450000" />
+      <workItem from="1394302103831" duration="860000" />
+      <workItem from="1394424975846" duration="1699000" />
+      <workItem from="1394622017717" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="Updating files&#10;">
       <created>1393603817347</created>
@@ -586,11 +743,59 @@
       <created>1394140666077</created>
       <updated>1394140666077</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update">
+      <created>1394141098205</created>
+      <updated>1394141098205</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update&#10;">
+      <created>1394146431562</created>
+      <updated>1394146431562</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update&#10;">
+      <created>1394146779746</created>
+      <updated>1394146779746</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update&#10;">
+      <created>1394148050589</created>
+      <updated>1394148050590</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update&#10;">
+      <created>1394148215560</created>
+      <updated>1394148215560</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update&#10;">
+      <created>1394148273344</created>
+      <updated>1394148273344</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update&#10;">
+      <created>1394148560398</created>
+      <updated>1394148560398</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update&#10;">
+      <created>1394152100566</created>
+      <updated>1394152100566</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update&#10;">
+      <created>1394153610167</created>
+      <updated>1394153610167</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update&#10;">
+      <created>1394154636225</created>
+      <updated>1394154636225</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update&#10;">
+      <created>1394155215541</created>
+      <updated>1394155215541</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update&#10;">
+      <created>1394426666211</created>
+      <updated>1394426666211</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16663000" />
+    <option name="totallyTimeSpent" value="29171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="808" extended-state="6" />
@@ -603,24 +808,25 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -637,7 +843,14 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Updating files&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating files&#10;" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Update&#10;" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Delete" />
+    <MESSAGE value="Learning how to use SVN" />
+    <MESSAGE value="Importing into SVN" />
+    <MESSAGE value="Deleting class files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleting class files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -647,11 +860,76 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="0" selection-start="4133" selection-end="4133" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="2145">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3496#3504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Words2SigsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="52" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="3951" selection-end="3951" vertical-scroll-proportion="0.0" vertical-offset="1905" max-vertical-offset="2205">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3496#3504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryListImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="42" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,6 +946,7 @@
         <state line="79" column="42" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,6 +963,7 @@
         <state line="75" column="0" selection-start="2697" selection-end="2697" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -700,6 +980,7 @@
         <state line="52" column="43" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,6 +990,7 @@
         <state line="68" column="51" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1590">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -718,6 +1000,7 @@
         <state line="57" column="0" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1485">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -734,6 +1017,7 @@
         <state line="76" column="0" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1590">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,90 +1034,99 @@
         <state line="2" column="37" selection-start="116" selection-end="116" vertical-scroll-proportion="0.06410257" vertical-offset="0" max-vertical-offset="468" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Words2SigsProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="244" selection-end="244" vertical-scroll-proportion="0.32051283" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/PredictivePrototypeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="456" selection-end="456" vertical-scroll-proportion="0.44871795" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Comparable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.06410257" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.06410257" vertical-offset="0" max-vertical-offset="468" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Integer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="4077" selection-end="4077" vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="1650">
-          <folding />
-        </state>
+        <state line="105" column="0" selection-start="4077" selection-end="4077" vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="1650" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/math/BigInteger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="0" selection-start="10180" selection-end="10180" vertical-scroll-proportion="0.0" vertical-offset="3528" max-vertical-offset="3960">
+        <state line="259" column="0" selection-start="10180" selection-end="10180" vertical-scroll-proportion="0.0" vertical-offset="3528" max-vertical-offset="3960" />
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/NumberFormatException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/WordSig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="17" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.78902954" vertical-offset="69" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="36" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="1530">
+        <state line="83" column="0" selection-start="2927" selection-end="2927" vertical-scroll-proportion="1.7510549" vertical-offset="0" max-vertical-offset="1755">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2915#2923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Words2SigsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.23206751" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PredictivePrototypeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="188" selection-end="188" vertical-scroll-proportion="0.14767933" vertical-offset="0" max-vertical-offset="711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryListImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.33755276" vertical-offset="0" max-vertical-offset="711">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="555">
-          <folding />
+        <state line="133" column="9" selection-start="0" selection-end="4180" vertical-scroll-proportion="0.0" vertical-offset="1419" max-vertical-offset="2130">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3496#3504#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/NumberFormatException.class">
+    <entry file="file://$PROJECT_DIR$/src/predictive/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+        <state line="7" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.15261628" vertical-offset="0" max-vertical-offset="688">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+        <state line="17" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5448718" vertical-offset="0" max-vertical-offset="468">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="38" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="816">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#403#412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/WordSig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="32" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.4871795" vertical-offset="342" max-vertical-offset="840">
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-          </folding>
+        <state line="18" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="468">
+          <folding />
         </state>
       </provider>
     </entry>

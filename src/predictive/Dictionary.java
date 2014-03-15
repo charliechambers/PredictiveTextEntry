@@ -8,14 +8,6 @@ import java.util.*;
 
 public interface Dictionary {
 
-
-    /**
-     * Returns the array list containing the dictionary.
-     *
-     * @return
-     */
-    ArrayList<WordSig> getDictionary();
-
     /**
      * Takes in a word and returns the numerical signature for that word.
      *

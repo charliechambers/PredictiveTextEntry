@@ -13,6 +13,7 @@ public class DictionaryMapImpl implements Dictionary {
     private static final Hashtable<Character, Integer> charsigs = new Hashtable<Character, Integer>();
     private Map<String, Set<String>> dictionary = new HashMap<String, Set<String>>();
 
+    // TESTING SVN
     static {
         charsigs.put('a', 2);
         charsigs.put('b', 2);

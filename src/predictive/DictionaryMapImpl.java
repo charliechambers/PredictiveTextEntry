@@ -1,8 +1,7 @@
 package predictive;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.math.BigInteger;
 import java.util.*;
 
 /**
@@ -10,37 +9,36 @@ import java.util.*;
  */
 public class DictionaryMapImpl implements Dictionary {
 
-    private static final Hashtable<Character, Integer> charsigs = new Hashtable<Character, Integer>();
-    private Map<String, Set<String>> dictionary = new HashMap<String, Set<String>>();
+    private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
+    private Map<BigInteger, Set<String>> dictionary = new HashMap<BigInteger, Set<String>>();
 
-    // TESTING SVN
     static {
-        charsigs.put('a', 2);
-        charsigs.put('b', 2);
-        charsigs.put('c', 2);
-        charsigs.put('d', 3);
-        charsigs.put('e', 3);
-        charsigs.put('f', 3);
-        charsigs.put('g', 4);
-        charsigs.put('h', 4);
-        charsigs.put('i', 4);
-        charsigs.put('j', 5);
-        charsigs.put('k', 5);
-        charsigs.put('l', 5);
-        charsigs.put('m', 6);
-        charsigs.put('n', 6);
-        charsigs.put('o', 6);
-        charsigs.put('p', 7);
-        charsigs.put('q', 7);
-        charsigs.put('r', 7);
-        charsigs.put('s', 7);
-        charsigs.put('t', 8);
-        charsigs.put('u', 8);
-        charsigs.put('v', 8);
-        charsigs.put('w', 9);
-        charsigs.put('x', 9);
-        charsigs.put('y', 9);
-        charsigs.put('z', 9);
+        signatures.put('a', 2);
+        signatures.put('b', 2);
+        signatures.put('c', 2);
+        signatures.put('d', 3);
+        signatures.put('e', 3);
+        signatures.put('f', 3);
+        signatures.put('g', 4);
+        signatures.put('h', 4);
+        signatures.put('i', 4);
+        signatures.put('j', 5);
+        signatures.put('k', 5);
+        signatures.put('l', 5);
+        signatures.put('m', 6);
+        signatures.put('n', 6);
+        signatures.put('o', 6);
+        signatures.put('p', 7);
+        signatures.put('q', 7);
+        signatures.put('r', 7);
+        signatures.put('s', 7);
+        signatures.put('t', 8);
+        signatures.put('u', 8);
+        signatures.put('v', 8);
+        signatures.put('w', 9);
+        signatures.put('x', 9);
+        signatures.put('y', 9);
+        signatures.put('z', 9);
     }
 
     public DictionaryMapImpl() {
@@ -50,22 +48,23 @@ public class DictionaryMapImpl implements Dictionary {
             textFile = new FileInputStream("/usr/share/dict/words");
             readWords = new BufferedReader(new InputStreamReader(textFile));
             String word;
-            String prev = null;
-            Set<String> current = new HashSet<String>();
+            Set<String> current;
             while ((word = readWords.readLine()) != null) {
-                if (wordToSignature(word).equals(prev)){
-                    current.add(word);
-                }
-                else{
-                    dictionary.put(wordToSignature(word), current);
-                    current.clear();
+                word = word.toLowerCase();
+                if(word.matches("[a-z]+")){
+                    BigInteger signature = new BigInteger(wordToSignature(word));
+                    if(dictionary.get(signature) == null) {
+                        current = new HashSet<String>();
+                    } else {
+                        current = dictionary.get(signature);
+                    }
+                    current.add(word.toLowerCase());
+                    dictionary.put(signature, current);
                 }
             }
             textFile.close();
-
-
         } catch (Exception e) {
-            System.out.println("Dictionary file could not be found");
+            e.printStackTrace();
         }
     }
 
@@ -88,8 +87,8 @@ public class DictionaryMapImpl implements Dictionary {
             char letter = word.charAt(i);
 
             // Compares the letter with each case and appends corresponding number to buffer.
-            if (charsigs.containsKey(letter))
-                buffer.append(charsigs.get(letter));
+            if (signatures.containsKey(letter))
+                buffer.append(signatures.get(letter));
             else
                 buffer.append(" ");
         }
@@ -105,6 +104,7 @@ public class DictionaryMapImpl implements Dictionary {
      */
     @Override
     public Set<String> signatureToWords(String signature) {
-        return dictionary.get(signature);
+        BigInteger sig = new BigInteger(signature);
+        return dictionary.get(sig);
     }
 }

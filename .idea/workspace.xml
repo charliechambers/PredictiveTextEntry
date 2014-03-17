@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232a7d8d-69b3-4bae-82bc-1ea195728416" name="Default" comment="Update&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java" afterPath="$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -67,10 +68,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DictionaryMapImpl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DictionaryTreeImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="1410">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#210#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PredictivePrototype.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DictionaryMapImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="29" selection-start="830" selection-end="830" vertical-scroll-proportion="0.37974682" vertical-offset="105" max-vertical-offset="1695">
+            <state line="53" column="32" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
@@ -84,6 +106,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -98,7 +121,9 @@
         <option value="$PROJECT_DIR$/src/predictive/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
         <option value="$PROJECT_DIR$/src/test/DictionaryListImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/DictionaryMapImplTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java" />
+        <option value="$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java" />
       </list>
     </option>
   </component>
@@ -135,8 +160,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,6 +216,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,42 +244,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
-  <component name="RunManager" selected="TestNG.DictionaryListImplTest">
-    <configuration default="false" name="PredictivePrototypeTest.wordToSignatureTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PredictiveTextEntry" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.PredictivePrototypeTest" />
-      <option name="METHOD_NAME" value="wordToSignatureTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.DictionaryMapImplTest">
     <configuration default="false" name="PredictivePrototypeTest.signatureToWordsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -382,6 +372,41 @@
       <option name="METHOD_NAME" value="signatureToWordsTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DictionaryMapImplTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PredictiveTextEntry" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DictionaryMapImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -667,19 +692,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.DictionaryListImpl" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.Test" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.wordToSignatureTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.DictionaryMapImplTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.wordToSignatureTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.DictionaryMapImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.signatureToWordsTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.DictionaryListImplTest.wordToSignatureTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.PredictivePrototypeTest.signatureToWordsTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -730,7 +755,9 @@
       <workItem from="1394703460266" duration="8000" />
       <workItem from="1394897887697" duration="3997000" />
       <workItem from="1394904439905" duration="3544000" />
-      <workItem from="1394908650892" duration="189000" />
+      <workItem from="1394908650892" duration="4998000" />
+      <workItem from="1395024423912" duration="142000" />
+      <workItem from="1395065929793" duration="1844000" />
     </task>
     <task id="LOCAL-00001" summary="Updating files&#10;">
       <created>1393603817347</created>
@@ -816,11 +843,19 @@
       <created>1394907077655</created>
       <updated>1394907077655</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update&#10;">
+      <created>1394908886827</created>
+      <updated>1394908886827</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update&#10;">
+      <created>1394979786779</created>
+      <updated>1394979786779</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37450000" />
+    <option name="totallyTimeSpent" value="44245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="808" extended-state="6" />
@@ -846,7 +881,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -868,16 +903,16 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Updating files&#10;" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Delete" />
     <MESSAGE value="Learning how to use SVN" />
     <MESSAGE value="Importing into SVN" />
-    <MESSAGE value="Update&#10;" />
     <MESSAGE value="Update, attempting DictionaryMapImpl&#10;" />
     <MESSAGE value="Deleting class files" />
     <MESSAGE value="Adding files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding files." />
+    <MESSAGE value="Update&#10;" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -887,6 +922,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#210#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="5" selection-start="2430" selection-end="3160" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="1560" selection-end="2095" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PredictiveTextEntry.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="37" selection-start="116" selection-end="116" vertical-scroll-proportion="0.06410257" vertical-offset="0" max-vertical-offset="468" />
@@ -937,10 +996,57 @@
         <state line="6" column="49" selection-start="188" selection-end="188" vertical-scroll-proportion="0.10548523" vertical-offset="0" max-vertical-offset="711" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryListImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PredictivePrototypeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.16025642" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryMapImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="468">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="1560" selection-end="2095" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="29" selection-start="830" selection-end="830" vertical-scroll-proportion="0.37974682" vertical-offset="105" max-vertical-offset="1695">
+        <state line="53" column="32" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1695">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="1410">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#210#218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

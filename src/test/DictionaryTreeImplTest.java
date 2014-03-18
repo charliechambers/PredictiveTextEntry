@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import predictive.DictionaryTreeImpl;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 
 public class DictionaryTreeImplTest {
@@ -23,8 +23,7 @@ public class DictionaryTreeImplTest {
 
     @Test
     public void signatureToWordsTest(){
-        assertEquals(test.signatureToWords("43").toString(), "[vestini, vesting, testing]");
-        //assertEquals(test.signatureToWords("8378464").toString(), "[vestini, vesting, testing]");
-        //assertEquals(test.signatureToWords("7839273377").toString(), "[stewardess]");
+        assertEquals(test.signatureToWords("8378464").toString(), "[vestini, vesting, testing]");
+        assertEquals(test.signatureToWords("7839273377").toString(), "[stewardess]");
     }
 }

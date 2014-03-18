@@ -60,11 +60,7 @@ public class DictionaryTreeImpl implements Dictionary {
         }
     }
 
-    static int cnt = 0;
-    private DictionaryTreeImpl() {
-        if(++cnt % 50 == 0)
-        System.out.println(cnt);
-    }
+    private DictionaryTreeImpl() {}
 
     /**
      * Takes in a word and returns the numerical signature for that word.

@@ -70,7 +70,7 @@
       <file leaf-file-name="DictionaryTreeImplTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="30" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="9" column="31" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +81,7 @@
       <file leaf-file-name="DictionaryTreeImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="41" selection-start="3207" selection-end="3207" vertical-scroll-proportion="0.43037975" vertical-offset="1209" max-vertical-offset="2295">
+            <state line="57" column="22" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.41666666" vertical-offset="600" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
@@ -248,7 +248,7 @@
       <recent name="predictive" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GetHeapSize">
+  <component name="RunManager" selected="TestNG.DictionaryTreeImplTest">
     <configuration default="false" name="DictionaryMapImplTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -667,8 +667,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.GetHeapSize" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.DictionaryTreeImplTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.DictionaryTreeImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GetHeapSize" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.DictionaryMapImplTest" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.DictionaryTreeImplTest.signatureToWordsTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.ExceptionExample" />
@@ -732,7 +732,7 @@
       <workItem from="1395139089296" duration="4498000" />
       <workItem from="1395145919351" duration="226000" />
       <workItem from="1395146155546" duration="954000" />
-      <workItem from="1395180325547" duration="1471000" />
+      <workItem from="1395180325547" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="Updating files&#10;">
       <created>1393603817347</created>
@@ -846,15 +846,19 @@
       <created>1395181627113</created>
       <updated>1395181627113</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Update&#10;">
+      <created>1395182491131</created>
+      <updated>1395182491131</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54164000" />
+    <option name="totallyTimeSpent" value="54308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="808" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -875,8 +879,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1008,15 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="71" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.5769231" vertical-offset="900" max-vertical-offset="1815">
@@ -1024,9 +1019,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="41" selection-start="3207" selection-end="3207" vertical-scroll-proportion="0.43037975" vertical-offset="1209" max-vertical-offset="2295">
+        <state line="57" column="22" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.41666666" vertical-offset="600" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>

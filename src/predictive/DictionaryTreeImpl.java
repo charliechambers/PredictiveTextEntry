@@ -102,7 +102,7 @@ public class DictionaryTreeImpl implements Dictionary {
      */
     @Override
     public Set<String> signatureToWords(String signature) {
-        if(signature.matches("[2-9]+")){
+        if(isValidSignature(signature)){
             return new HashSet<String>();
         }
         return getNode(signature).words;
@@ -111,6 +111,15 @@ public class DictionaryTreeImpl implements Dictionary {
     private boolean isValidWord(String word) {
         for(char ch : word.toCharArray()) {
             if(ch < 'a' || ch > 'z') {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean isValidSignature(String signature) {
+        for(char ch : signature.toCharArray()) {
+            if(ch < 2 || ch > 9) {
                 return false;
             }
         }

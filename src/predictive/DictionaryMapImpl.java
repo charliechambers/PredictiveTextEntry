@@ -1,7 +1,8 @@
 package predictive;
 
-import java.io.*;
-import java.math.BigInteger;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 
 /**
@@ -10,7 +11,7 @@ import java.util.*;
 public class DictionaryMapImpl implements Dictionary {
 
     private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
-    private Map<BigInteger, Set<String>> dictionary = new HashMap<BigInteger, Set<String>>();
+    private Map<String, Set<String>> dictionary = new HashMap<String, Set<String>>();
 
     static {
         signatures.put('a', 2);
@@ -48,24 +49,33 @@ public class DictionaryMapImpl implements Dictionary {
             textFile = new FileInputStream("/usr/share/dict/words");
             readWords = new BufferedReader(new InputStreamReader(textFile));
             String word;
-            Set<String> current;
             while ((word = readWords.readLine()) != null) {
                 word = word.toLowerCase();
-                if(word.matches("[a-z]+")){
-                    BigInteger signature = new BigInteger(wordToSignature(word));
+                if(isValidWord(word)){
+                    String signature = wordToSignature(word);
                     if(dictionary.get(signature) == null) {
-                        current = new HashSet<String>();
+                        Set<String> current = new HashSet<String>();
+                        current.add(word);
+                        dictionary.put(signature, current);
                     } else {
-                        current = dictionary.get(signature);
+                        dictionary.get(signature).add(word);
+
                     }
-                    current.add(word.toLowerCase());
-                    dictionary.put(signature, current);
                 }
             }
             textFile.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean isValidWord(String word) {
+        for(char ch : word.toCharArray()) {
+            if(ch < 'a' || ch > 'z') {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -104,7 +114,6 @@ public class DictionaryMapImpl implements Dictionary {
      */
     @Override
     public Set<String> signatureToWords(String signature) {
-        BigInteger sig = new BigInteger(signature);
-        return dictionary.get(sig);
+        return dictionary.get(signature);
     }
 }

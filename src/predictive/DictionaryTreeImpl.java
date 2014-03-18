@@ -1,158 +1,142 @@
 package predictive;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.FileReader;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Set;
 
 /**
- * Created by Charles Chambers on 16/03/2014.
+ * Created by Charles Chambers on 18/03/2014.
  */
-public class DictionaryTreeImpl {
+public class DictionaryTreeImpl implements Dictionary {
+    private static final Hashtable<Character, Integer> signatures = new Hashtable<Character, Integer>();
+    private DictionaryTreeImpl[] children = new DictionaryTreeImpl[8];
+    private Set<String> words = new HashSet<String>();
 
-    private Set<String> possibleWords = new HashSet<String>();
-    private String signature;
-    private Set<String> words;
+    static {
+        signatures.put('a', 2);
+        signatures.put('b', 2);
+        signatures.put('c', 2);
+        signatures.put('d', 3);
+        signatures.put('e', 3);
+        signatures.put('f', 3);
+        signatures.put('g', 4);
+        signatures.put('h', 4);
+        signatures.put('i', 4);
+        signatures.put('j', 5);
+        signatures.put('k', 5);
+        signatures.put('l', 5);
+        signatures.put('m', 6);
+        signatures.put('n', 6);
+        signatures.put('o', 6);
+        signatures.put('p', 7);
+        signatures.put('q', 7);
+        signatures.put('r', 7);
+        signatures.put('s', 7);
+        signatures.put('t', 8);
+        signatures.put('u', 8);
+        signatures.put('v', 8);
+        signatures.put('w', 9);
+        signatures.put('x', 9);
+        signatures.put('y', 9);
+        signatures.put('z', 9);
+    }
 
-    public DictionaryTreeImpl(String signature) {
-        FileInputStream textFile;
+    public DictionaryTreeImpl(String fileName) {
         BufferedReader readWords;
         try {
-            textFile = new FileInputStream("/usr/share/dict/words");
-            readWords = new BufferedReader(new InputStreamReader(textFile));
+            readWords = new BufferedReader(new FileReader(fileName));
             String word;
             while ((word = readWords.readLine()) != null) {
-                words.add(word);
+                if(isValidWord(word)){
+                    String signature = wordToSignature(word);
+                    add(word, signature);
+                }
             }
-            textFile.close();
+            readWords.close();
         } catch (Exception e) {
-            System.out.println("Dictionary file could not be found");
+            e.printStackTrace();
         }
-        new DictionaryTreeImpl(signature, words);
     }
 
-    public DictionaryTreeImpl(String signature, Set<String> words) {
-        this.signature = signature;
-        this.words = words;
+    static int cnt = 0;
+    private DictionaryTreeImpl() {
+        if(++cnt % 50 == 0)
+        System.out.println(cnt);
     }
 
+    /**
+     * Takes in a word and returns the numerical signature for that word.
+     *
+     * @param word
+     * @return
+     */
+    @Override
+    public String wordToSignature(String word) {
+        // Creates new string buffer to hold the signature.
+        StringBuffer buffer = new StringBuffer();
 
-    public Set<String> signatureToWordsHelper() {
-        if (signature.substring(0).equals("2")) {
-            for (String word : words) {
-                if (word.substring(0, 1).matches("[a-c]")) {
-                    possibleWords.add(word);
-                }
-            }
-            if (signature.length() == 1) {
-                return possibleWords;
-            } else {
-                DictionaryTreeImpl two = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                two.signatureToWordsHelper();
-            }
+        // Converts the word to lower case.
+        word = word.toLowerCase();
 
+        // Loops through each letter in the word.
+        for (int i = 0; i < word.length(); i++) {
+            char letter = word.charAt(i);
 
-            if (signature.substring(0).equals("3")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[d-f]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl three = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    three.signatureToWordsHelper();
-                }
-            }
+            // Compares the letter with each case and appends corresponding number to buffer.
+            if (signatures.containsKey(letter))
+                buffer.append(signatures.get(letter));
+            else
+                buffer.append(" ");
+        }
+        // Return the string version of the buffer.
+        return buffer.toString();
+    }
 
+    /**
+     * Takes in a numerical signature and returns all possible words matching the numbers.
+     *
+     * @param signature
+     * @return
+     */
+    @Override
+    public Set<String> signatureToWords(String signature) {
+        if(signature.matches("[2-9]+")){
+            return new HashSet<String>();
+        }
+        return getNode(signature).words;
+    }
 
-            if (signature.substring(0).equals("4")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[g-i]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                DictionaryTreeImpl four = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                four.signatureToWordsHelper();
-            }
-
-
-            if (signature.substring(0).equals("5")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[j-l]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl five = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    five.signatureToWordsHelper();
-                }
-            }
-
-
-            if (signature.substring(0).equals("6")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[m-o]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl six = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    six.signatureToWordsHelper();
-                }
-            }
-
-
-            if (signature.substring(0).equals("7")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[p-s]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl seven = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    seven.signatureToWordsHelper();
-                }
-            }
-
-
-            if (signature.substring(0).equals("8")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[t-v]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl eight = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    eight.signatureToWordsHelper();
-                }
-            }
-
-
-            if (signature.substring(0).equals("9")) {
-                for (String word : words) {
-                    if (word.substring(0, 1).matches("[w-z]")) {
-                        possibleWords.add(word);
-                    }
-                }
-                if (signature.length() == 1) {
-                    return possibleWords;
-                } else {
-                    DictionaryTreeImpl nine = new DictionaryTreeImpl(signature.substring(1, signature.length()), possibleWords);
-                    nine.signatureToWordsHelper();
-                }
+    private boolean isValidWord(String word) {
+        for(char ch : word.toCharArray()) {
+            if(ch < 'a' || ch > 'z') {
+                return false;
             }
         }
-        return new HashSet<String>();
+        return true;
+    }
+
+    private void add(String word, String signature) {
+        getNode(signature).words.add(word);
+    }
+
+    private DictionaryTreeImpl getNode(String signature){
+        DictionaryTreeImpl node = this;
+        for(char ch : signature.toCharArray()) {
+            node = node.getChild(ch);
+        }
+        return node;
+    }
+
+    private DictionaryTreeImpl getChild(char ch) {
+        if(ch < '2' || ch > '9') {
+            return null;
+        }
+        int index = ch - '2';
+        if(children[index] == null) {
+            children[index] = new DictionaryTreeImpl();
+        }
+        return children[index];
     }
 }

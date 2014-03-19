@@ -49,7 +49,7 @@ public class DictionaryTreeImpl implements Dictionary {
             readWords = new BufferedReader(new FileReader(fileName));
             String word;
             while ((word = readWords.readLine()) != null) {
-                if(isValidWord(word)){
+                if (isValidWord(word)) {
                     String signature = wordToSignature(word);
                     add(word, signature);
                 }
@@ -60,7 +60,8 @@ public class DictionaryTreeImpl implements Dictionary {
         }
     }
 
-    private DictionaryTreeImpl() {}
+    private DictionaryTreeImpl() {
+    }
 
     /**
      * Takes in a word and returns the numerical signature for that word.
@@ -98,15 +99,44 @@ public class DictionaryTreeImpl implements Dictionary {
      */
     @Override
     public Set<String> signatureToWords(String signature) {
-        if(isValidSignature(signature)){
+        if (isValidSignature(signature)) {
             return new HashSet<String>();
         }
-        return getNode(signature).words;
+
+        Set<String> results = new HashSet<String>();
+
+        Set<String> current;
+        for (int i = 0; i < 3; i++) {
+            if (children[i] != null) {
+                if (!(children[i].signatureToWords(signature).isEmpty())) {
+                    current = children[i].signatureToWords(signature);
+                    for (String s : current) {
+                        results.add(s.substring(0, signature.length()));
+                    }
+                }
+            }
+        }
+
+        /*
+        for (DictionaryTreeImpl child : children) {
+            if (child != null) {
+                Set<String> current = child.signatureToWords("" + signature + i);
+                i++;
+                for (String temp : current) {
+                    results.add(temp.substring(0, signature.length()));
+                }
+            }
+        }
+        */
+
+
+        results.addAll(getNode(signature).words);
+        return results;
     }
 
     private boolean isValidWord(String word) {
-        for(char ch : word.toCharArray()) {
-            if(ch < 'a' || ch > 'z') {
+        for (char ch : word.toCharArray()) {
+            if (ch < 'a' || ch > 'z') {
                 return false;
             }
         }
@@ -114,8 +144,8 @@ public class DictionaryTreeImpl implements Dictionary {
     }
 
     private boolean isValidSignature(String signature) {
-        for(char ch : signature.toCharArray()) {
-            if(ch < 2 || ch > 9) {
+        for (char ch : signature.toCharArray()) {
+            if (ch < 2 || ch > 9) {
                 return false;
             }
         }
@@ -126,20 +156,20 @@ public class DictionaryTreeImpl implements Dictionary {
         getNode(signature).words.add(word);
     }
 
-    private DictionaryTreeImpl getNode(String signature){
+    private DictionaryTreeImpl getNode(String signature) {
         DictionaryTreeImpl node = this;
-        for(char ch : signature.toCharArray()) {
+        for (char ch : signature.toCharArray()) {
             node = node.getChild(ch);
         }
         return node;
     }
 
     private DictionaryTreeImpl getChild(char ch) {
-        if(ch < '2' || ch > '9') {
+        if (ch < '2' || ch > '9') {
             return null;
         }
         int index = ch - '2';
-        if(children[index] == null) {
+        if (children[index] == null) {
             children[index] = new DictionaryTreeImpl();
         }
         return children[index];

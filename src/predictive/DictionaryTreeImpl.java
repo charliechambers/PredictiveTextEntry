@@ -111,7 +111,7 @@ public class DictionaryTreeImpl implements Dictionary {
 
     public Set<String> getChildWords(String signature) {
         Set<String> results = new HashSet<String>();
-        for (DictionaryTreeImpl current : getNode(signature).children) {
+        for (DictionaryTreeImpl current :children) {
             if (current != null) {
                 for (String word : current.words) {
                     results.add(word.substring(0, signature.length()));

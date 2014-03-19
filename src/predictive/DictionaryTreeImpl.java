@@ -49,6 +49,7 @@ public class DictionaryTreeImpl implements Dictionary {
             readWords = new BufferedReader(new FileReader(fileName));
             String word;
             while ((word = readWords.readLine()) != null) {
+                word = word.toLowerCase();
                 if (isValidWord(word)) {
                     String signature = wordToSignature(word);
                     add(word, signature);

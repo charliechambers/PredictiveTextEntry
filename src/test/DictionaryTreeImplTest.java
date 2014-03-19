@@ -17,7 +17,9 @@ public class DictionaryTreeImplTest {
 
     @Test
     public void signatureToWordsTest(){
-        assertEquals(test.signatureToWords("8378464").toString(), "[vesting, testing]");
+        assertEquals(test.signatureToWords("8378464").toString(), "[vestini, vesting, testing]");
         assertEquals(test.signatureToWords("7839273377").toString(), "[stewardess]");
+        assertEquals(test.signatureToWords("43556").toString(), "[hello, gekko]");
+        assertEquals(test.signatureToWords("435").toString(), "[hel, gel, idl]");
     }
 }

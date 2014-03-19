@@ -102,35 +102,22 @@ public class DictionaryTreeImpl implements Dictionary {
         if (!isValidSignature(signature)) {
             return new HashSet<String>();
         }
-
         Set<String> results = new HashSet<String>();
-
-        Set<String> current;
-        for (int i = 0; i < 8; i++) {
-            if (children[i] != null) {
-                if (!(children[i].signatureToWords(signature).isEmpty())) {
-                    current = children[i].signatureToWords(signature + i);
-                    for (String s : current) {
-                        results.add(s.substring(0, signature.length()));
-                    }
-                }
-            }
-        }
-
-        /*
-        for (DictionaryTreeImpl child : children) {
-            if (child != null) {
-                Set<String> current = child.signatureToWords("" + signature + i);
-                i++;
-                for (String temp : current) {
-                    results.add(temp.substring(0, signature.length()));
-                }
-            }
-        }
-        */
-
-
+        results.addAll(getChildWords(signature));
         results.addAll(getNode(signature).words);
+        return results;
+    }
+
+    public Set<String> getChildWords(String signature) {
+        Set<String> results = new HashSet<String>();
+        for (DictionaryTreeImpl current : getNode(signature).children) {
+            if (current != null) {
+                for (String word : current.words) {
+                    results.add(word.substring(0, signature.length()));
+                }
+                results.addAll(current.getChildWords(signature));
+            }
+        }
         return results;
     }
 

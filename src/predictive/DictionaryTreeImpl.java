@@ -104,8 +104,9 @@ public class DictionaryTreeImpl implements Dictionary {
             return new HashSet<String>();
         }
         Set<String> results = new HashSet<String>();
-        results.addAll(getChildWords(signature));
-        results.addAll(getNode(signature).words);
+        DictionaryTreeImpl node = getNode(signature);
+        results.addAll(node.getChildWords(signature));
+        results.addAll(node.words);
         return results;
     }
 

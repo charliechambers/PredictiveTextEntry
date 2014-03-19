@@ -99,17 +99,17 @@ public class DictionaryTreeImpl implements Dictionary {
      */
     @Override
     public Set<String> signatureToWords(String signature) {
-        if (isValidSignature(signature)) {
+        if (!isValidSignature(signature)) {
             return new HashSet<String>();
         }
 
         Set<String> results = new HashSet<String>();
 
         Set<String> current;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 8; i++) {
             if (children[i] != null) {
                 if (!(children[i].signatureToWords(signature).isEmpty())) {
-                    current = children[i].signatureToWords(signature);
+                    current = children[i].signatureToWords(signature + i);
                     for (String s : current) {
                         results.add(s.substring(0, signature.length()));
                     }
@@ -145,7 +145,7 @@ public class DictionaryTreeImpl implements Dictionary {
 
     private boolean isValidSignature(String signature) {
         for (char ch : signature.toCharArray()) {
-            if (ch < 2 || ch > 9) {
+            if (ch < '2' || ch > '9') {
                 return false;
             }
         }

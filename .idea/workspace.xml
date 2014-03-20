@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232a7d8d-69b3-4bae-82bc-1ea195728416" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java" afterPath="$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java" afterPath="$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordsMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordsTree.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordsTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PredictiveTextEntry.iws" />
@@ -70,28 +70,7 @@
     <favorites_list name="PredictiveTextEntry" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DictionaryTreeImplTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="75" selection-start="446" selection-end="446" vertical-scroll-proportion="0.3525641" vertical-offset="0" max-vertical-offset="468">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryTreeImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="17" selection-start="3749" selection-end="3749" vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="2580">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -122,11 +101,12 @@
         <option value="$PROJECT_DIR$/src/predictive/TreeImpl.java" />
         <option value="$PROJECT_DIR$/src/test/DictionaryDictionaryTreeImplTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java" />
-        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsTree.java" />
         <option value="$PROJECT_DIR$/src/predictive/HeapSize.java" />
         <option value="$PROJECT_DIR$/src/HeapSize.java" />
         <option value="$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java" />
         <option value="$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsMap.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsTree.java" />
       </list>
     </option>
   </component>
@@ -163,6 +143,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,8 +201,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -739,7 +719,8 @@
       <workItem from="1395180325547" duration="2137000" />
       <workItem from="1395183326928" duration="7284000" />
       <workItem from="1395243208194" duration="4133000" />
-      <workItem from="1395270387988" duration="1945000" />
+      <workItem from="1395270387988" duration="1973000" />
+      <workItem from="1395315600270" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="Updating files&#10;">
       <created>1393603817347</created>
@@ -885,15 +866,19 @@
       <created>1395272000893</created>
       <updated>1395272000893</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Update&#10;">
+      <created>1395272367876</created>
+      <updated>1395272367876</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68192000" />
+    <option name="totallyTimeSpent" value="68674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="808" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -908,19 +893,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -956,6 +941,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="65" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="17" selection-start="3749" selection-end="3749" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/DictionaryMapImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
@@ -975,9 +974,7 @@
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="31" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2745">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -991,9 +988,7 @@
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="55" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="2235">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,23 +1077,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="735" selection-end="735" vertical-scroll-proportion="0.28846154" vertical-offset="180" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryListImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="21" selection-start="3420" selection-end="3420" vertical-scroll-proportion="2.147436" vertical-offset="630" max-vertical-offset="2085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="224" selection-end="224" vertical-scroll-proportion="0.28846154" vertical-offset="0" max-vertical-offset="468">
           <folding />
         </state>
       </provider>
@@ -1112,18 +1093,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryMapImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="735" selection-end="735" vertical-scroll-proportion="0.443038" vertical-offset="0" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/DictionaryTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="17" selection-start="3749" selection-end="3749" vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="2580">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="118" column="17" selection-start="3749" selection-end="3749" vertical-scroll-proportion="-0.08438819" vertical-offset="1770" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="43" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="43" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="264" selection-end="264" vertical-scroll-proportion="0.23206751" vertical-offset="0" max-vertical-offset="711">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/DictionaryTreeImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="75" selection-start="446" selection-end="446" vertical-scroll-proportion="0.3525641" vertical-offset="0" max-vertical-offset="468">
+        <state line="11" column="9" selection-start="265" selection-end="265" vertical-scroll-proportion="0.16877638" vertical-offset="0" max-vertical-offset="711">
           <folding />
         </state>
       </provider>
